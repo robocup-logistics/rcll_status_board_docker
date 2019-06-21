@@ -1,0 +1,5 @@
+alias rcllviz-build='docker build -t rcllvizimage .'
+alias rcllviz-init='xhost +local:root && docker run --name rcllviz -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" rcllvizimage'
+alias rcllviz-console='docker exec -it rcllviz /bin/bash'
+alias rcllviz-start='xhost +local:root && docker start rcllviz'
+alias rcllviz-stop='docker stop rcllviz'
