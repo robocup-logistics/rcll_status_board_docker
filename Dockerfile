@@ -48,3 +48,7 @@ WORKDIR /root/catkin_ws/src
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ["chmod", "+x", "/usr/local/bin/docker-entrypoint.sh"]
 ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["--refbox_host", "192.168.2.108"]
+CMD ["--refbox_remote", "true"]
+CMD ["--screen_width", "1920"]
+CMD ["--screen_height", "1080"]
