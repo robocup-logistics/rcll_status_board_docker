@@ -41,6 +41,11 @@ WORKDIR /root/catkin_ws/src/rcll_status_board
 RUN git checkout dockerized
 WORKDIR /root/catkin_ws/src
 
+RUN bash -c '\
+  source /opt/ros/melodic/setup.bash && \
+  cd /root/catkin_ws && \
+  catkin_make'
+
 # -----------#
 # Entrypoint #
 # -----------#
