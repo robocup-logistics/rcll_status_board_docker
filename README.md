@@ -39,7 +39,7 @@ $ rcllviz-init
 $ rcllviz-start
 $ rcllviz-stop
 ```
-- The `rcllviz-build` command builds the docker image from the Dockerfile. As the resulting container is quite big with the current setup (about 2GB), no dockerimage is currently provided at DockerHub.
+- The `rcllviz-build` command builds the docker image from the Dockerfile. As the resulting container is quite big with the current setup (about 2GB), no dockerimage is currently provided at DockerHub. For _llsf_msgs_ and _rcll_status_board_ the branch **dockerized** will be used.
 - The `rcllviz-init` command initializes the docker container with four parameters and runs it. If it is necessary to change the parameters you have to do this before by modifying the aliases file, resource it and run the `rcllviz-init` command. The container stays existent after quitting it with Ctrl+C.
   - `--refbox_host 192.168.2.108` IP adress of the refbox computer.
   - `--refbox_remote true` Defines whether the refbox is on a remote computer or not. If the value is `false` the `refbox_host` parameter is ignored and `localhost` is used as value for this.
