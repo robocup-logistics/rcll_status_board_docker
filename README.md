@@ -1,5 +1,5 @@
 # rcll_status_board_docker
-This readme describes the installation and usage for the Robo Cup Logistics League Status Board Visualization (rcllviz) in a docker environment.
+This readme describes the installation and usage for the [Robo Cup Logistics League Status Board Visualization](https://github.com/ethflo/rcll_status_board) (rcllviz) in a docker environment.
 
 ## Prerequesites
 To run the rcll_status the following prerequesites are necessary:
